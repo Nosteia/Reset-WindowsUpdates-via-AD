@@ -2,7 +2,7 @@
 #$OU = "AD INFO HERE"
 #$computers = Get-ADComputer -Filter * -SearchBase $OU | Select-Object Name | Foreach {$_.Name}
 $psexec = "C:\scripts\SysInternals"
-$computers = 'ARRAY OF COMPUTERS'
+$computers = @('ARRAY OF COMPUTERS')
 $fileDump = "C:\scripts\Dump"
 foreach ($computer in $computers)
     {
